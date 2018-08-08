@@ -31,7 +31,7 @@ export default class Input extends Component {
           onChange={this.handleChange}
           value={titleInput}
         />
-        <input
+        <textarea
           className="idea-body entry input-box"
           name="bodyInput"
           type="text"

@@ -1,10 +1,10 @@
 import React from 'react';
 import './compontent-css/IdeaCard.css';
 
-const IdeaCard = ({ name, description, id }) => (
+const IdeaCard = ({ titleInput, bodyInput, id }) => (
   <div className="IdeaCard">
-    <h1>{name}</h1>
-    <p>{description}</p>
+    <h3 className="title">{titleInput}</h3>
+    <p className="body">{bodyInput}</p>
   </div>
 );
 

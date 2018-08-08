@@ -6,20 +6,27 @@
   height: 12em;
 }
 
-.entry {
-  width: 70%;
-}
-
 .input-box {
   border: 0.5px solid #d1d3d4;
   padding: 0px;
+  width: 70%;
 }
 
 .idea-body {
   height: 5em;
   margin: 0.75em 0;
+  width: 70%;
+}
+
+.idea-title {
+  height: 1.5em;
 }
 
 .save-button {
   background-color: #00a79d;
+  width: 70%;
+}
+
+textarea {
+  resize: none;
 }
