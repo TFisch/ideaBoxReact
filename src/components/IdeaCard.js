@@ -1,4 +1,5 @@
 import React from 'react';
+import './compontent-css/IdeaCard.css';
 
 const IdeaCard = ({ name, description, id }) => (
   <div className="IdeaCard">
