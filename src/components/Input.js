@@ -11,7 +11,7 @@ export default class Input extends Component {
   }
 
   onSubmit = e => {
-    console.log(this.state);
+    this.props.addIdea(this.state);
   };
 
   handleChange = e => {
