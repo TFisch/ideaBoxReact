@@ -13,8 +13,9 @@ export default class Input extends Component {
   render() {
     return (
       <div className="user-input-wrap">
-        <input className="idea-title" type="text" />
-        <input className="idea-body" type="text" />
+        <h2>Ideabox</h2>
+        <input className="idea-title entry" type="text" />
+        <input className="idea-body entry" type="text" />
         <button>save</button>
       </div>
     );
