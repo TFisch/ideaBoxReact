@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Input from './components/Input';
+import IdeasContainer from './components/IdeasContainer';
 
 class App extends Component {
   constructor() {
@@ -20,6 +21,7 @@ class App extends Component {
     return (
       <div className="App">
         <Input addIdea={this.addIdea} />
+        <IdeasContainer ideas={this.state.ideas} />
       </div>
     );
   }
