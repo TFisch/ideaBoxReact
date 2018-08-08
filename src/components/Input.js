@@ -14,12 +14,9 @@ export default class Input extends Component {
     console.log(this.state);
   };
 
-  handleTitleChange = e => {
-    this.setState({ titleInput: e.target.value });
-  };
-
-  handleBodyChange = e => {
-    this.setState({ bodyInput: e.target.value });
+  handleChange = e => {
+    const { name, value } = e.target;
+    this.setState({ [name]: value });
   };
 
   render() {
@@ -29,16 +26,16 @@ export default class Input extends Component {
         <h2>Ideabox</h2>
         <input
           className="idea-title entry input-box"
-          name="title"
+          name="titleInput"
           type="text"
-          onChange={e => this.handleTitleChange(e)}
+          onChange={this.handleChange}
           value={titleInput}
         />
         <input
           className="idea-body entry input-box"
-          name="body"
+          name="bodyInput"
           type="text"
-          onChange={e => this.handleBodyChange(e)}
+          onChange={this.handleChange}
           value={bodyInput}
         />
         <button className="save-button entry" onClick={() => this.onSubmit()}>
